@@ -1,0 +1,53 @@
+#banner{
+    width:100%;
+    text-align:center;
+    background-image:url("images/back.png");
+    background-size:20rem;
+    border-radius:5px;
+}
+#banner a{
+    display: block;
+    background-color:rgb(0,255,0);
+    color:black;
+    font-size: 1.5rem;
+    float:left;
+    width: 16.66%;
+    transition: 0.3s;
+    text-align:center;
+    cursor:pointer;
+    text-decoration:none;
+    border-radius:2px;
+}
+#banner a:hover{
+    background-color:rgb(0,100,0);
+    color:white;
+}
+#banner img{
+    max-width:50%;
+}
+footer{
+    text-align:center;
+    background-color:rgb(0,0,100);
+    margin-top:auto;
+    color:white;
+    padding:0.5rem;
+    border-radius:5px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color:rgb(255,50,50);
+}
+a:hover{
+    color:rgb(100,50,50);
+}
+a:visited{
+    color:rgb(255,0,0);
+}

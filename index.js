@@ -4,7 +4,7 @@ const path=require("path");
 let site=new express();
 site.use(express.static(path.join(__dirname + '/static')));
 site.use('/favicon.ico', express.static('static/images/kestron.png'))
-site.listen(80,()=>{
+site.listen(3000,()=>{
     console.log("Site online");
 });
 site.get('/about', async (req, res) => {

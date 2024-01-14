@@ -1,0 +1,21 @@
+
+.ad{
+    background-color:#005000;
+    margin:20px;
+    border-radius:20px;
+    padding:20px;
+    color:white;
+    font-size:20px;
+    border-style:solid;
+    border-color:#00D700 #c0b07d #5e4506 #c0b07d;
+}
+.ad img{
+    width:10%;
+    padding:0.5rem;
+}
+.article-right img{
+    float:right;
+}
+.article-left img{
+    float:left;
+}

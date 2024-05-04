@@ -19,6 +19,9 @@ site.get('/links', async (req, res) => {
 site.get('/projects', async (req, res) => {
 	res.send(fs.readFileSync('static/projects.html', 'utf-8'));
 });
+site.get('/admin', async (req, res) => {
+	res.send(fs.readFileSync('static/admin.html', 'utf-8'));
+});
 site.get('/*',async (req,res)=>{
     res.send("<script>document.location.replace('https://kestron.software/');</script>");
 });

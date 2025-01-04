@@ -7,7 +7,7 @@ const banner=`
 `;
 const footer=`
 <footer>
-    <a href='mailto:kestron@kestron.software'>Kestron@Kestron.software</a> <a href="https://discord.gg/k3yVkrrvez">Discord Support Server</a>
+    <a href='mailto:kestron@kestron.software'>Kestron@Kestron.software</a> | <a href="https://discord.gg/k3yVkrrvez">Discord Support Server</a>
 </footer>
 `;
 document.body.innerHTML=banner+document.body.innerHTML+footer;

@@ -12,6 +12,7 @@
 .ad img{
     width:10%;
     padding:0.5rem;
+    border-radius:10px;
 }
 .article-right img{
     float:right;

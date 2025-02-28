@@ -82,3 +82,12 @@ img{
     border-style:solid;
     border-color:#00D700 #c0b07d #5e4506 #c0b07d;
 }
+#moving{
+    width:100%;
+    margin:0.5rem;
+    background-color:rgb(255,255,0);
+    color:#000;
+    text-align:center;
+    height:3rem;
+    font-size:2rem;
+}

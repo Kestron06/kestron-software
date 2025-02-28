@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects - Kestron</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Projects - Kestron" property="og:title" />
+        <meta content="View projects made by the Software Developer known as Kestron" property="og:description" />
+        <meta content="https://kestron.software" property="og:url" />
+        <meta content="https://kestron.software/images/kestron.png" property="og:image" />
+        <meta content="#006400" data-react-helmet="true" name="theme-color" />
+        <link href="all.css" media="only screen and (min-width: 480px)" rel="stylesheet"></link>
+        <link rel="stylesheet" href="projects.css"></link>
+        <link rel="stylesheet" media="only screen and (max-width: 480px)" href="mobile.css"></link>
+    </head>
+    <body>
+        <% if(curDomain.includes("kestron.software")){ %>
+            <div id="moving">
+                This website is moving! Find us at <a href="<%= curDomain.replaceAll("kestron.software","kestron.com") %>">kestron.com</a>!
+            </div>
+        <% } %>
+        <%- header %>
+        <h1>Projects</h1>
+        <div class="article-right ad">
+            <img src="https://stewbot.kestron.software/stewbot.jpg">
+            <h2><a href="https://stewbot.kestron.software">Stewbot</a></h2>
+            <p>
+                Stewbot is a verified Discord bot designed to keep servers fun and engaging while also providing moderators the tools to keep things clean and safe. The bot has tons of features and more are still being added. The bot is completely free. This bot was previously known as Kestron-Tron, and I started it shortly after becoming a moderator to automate some actions. Today the bot has grown, and is even officially verified by Discord! You can find it on the App Directory <a href="https://discord.com/application-directory/966167746243076136">here</a>.
+            </p>
+        </div>
+        <div class="ad article-left">
+            <img src="https://sleuth.kestron.software/favicon.ico">
+            <h2><a href="https://sleuth.kestron.software/">Sleuth</a></h2>
+            <p>
+                Originally known as Kestrogle, Sleuth is a search engine not unlike Searx that acts as a proxy between you and the biggest search engines, keeping your queries unassociated with you as well as providing you better results by sorting them based on relevancy to all three.
+            </p>
+        </div>
+        <div class="article-right ad">
+            <img src="/images/kestronMii.webp">
+            <h2><a href="https://github.com/KestronProgramming/MiiJS">MiiJS</a></h2>
+            <p>
+                MiiJS is an NPM package I developed by reverse engineering Mii files from both a Wii and a 3DS, which shares a format with the Wii U. This package allows you to read, write, edit, create, and convert Miis to and from the Wii and 3DS/Wii U, including support for Special Miis.
+            </p>
+        </div>
+        <div class="ad article-left">
+            <img src="images/mii.webp">
+            <h2><a href="https://github.com/Kestron06/AllAboutMii">AllAboutMii</a></h2>
+            <p>
+                AllAboutMii is a Discord bot that is a fully functional Wii Mii editor using MiiJS. It features just as much (in some cases, more) control as the real editor, and exports to both 3DS QRs and Wii bin files. The bot is currently inactive, however you can run it locally.
+            </p>
+        </div>
+        <%- footer %>
+    </body>
+</html>

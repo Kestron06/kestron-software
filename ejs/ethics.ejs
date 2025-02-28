@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethics - Kestron</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Ethics - Kestron" property="og:title" />
+        <meta content="View the code of ethics the Software Developer known as Kestron has commited to" property="og:description" />
+        <meta content="https://kestron.software" property="og:url" />
+        <meta content="https://kestron.software/images/kestron.png" property="og:image" />
+        <meta content="#006400" data-react-helmet="true" name="theme-color" />
+        <link href="all.css" media="only screen and (min-width: 480px)" rel="stylesheet"></link>
+        <link rel="stylesheet" media="only screen and (max-width: 480px)" href="mobile.css"></link>
+        <style>
+            #ethics{
+                background-color:rgb(50,50,50);
+                color:white;
+                border-radius:10px;
+                width:85%;
+                margin-left:auto;
+                margin-right:auto;
+                padding:10px;
+                margin-bottom:1rem;
+            }
+            p{
+                font-size:1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <% if(curDomain.includes("kestron.software")){ %>
+            <div id="moving">
+                This website is moving! Find us at <a href="<%= curDomain.replaceAll("kestron.software","kestron.com") %>">kestron.com</a>!
+            </div>
+        <% } %>
+        <%- header %>
+        <div id="ethics">
+            <h1>Ethics</h1>
+            <p>
+                What follows is the list of promises I will uphold with each of my projects.
+            </p>
+            <ul>
+                <li><h2>Legalese</h2>
+                    <p>
+                        Everything I write will be made understandable, as I call it "in plain text", with no fancy words or grammar for any reason besides professionalism. 
+                    </p>
+                </li>
+                <li><h2>Privacy</h2>
+                    <p>
+                        I will not store any data on you unless it is strictly necessary. And by strictly necessary I mean things such as settings, or info necessary to keep the site or project clean.
+                    </p>
+                </li>
+                <li><h2>Ads</h2>
+                    <p>
+                        I will not put any ads on any of my projects without prior consent in plain text. If my situation becomes bad enough that it becomes strictly necessary to make money and as such enable ads by default, the ability to disable ads will still be made available.
+                    </p>
+                </li>
+                <li><h2>Cleanliness</h2>
+                    <p>
+                        None of my projects will feature cuss words, inappropriate or insensitive images/topics, or anything that may be considered NSFW. If this becomes violated, please <a href="/contact">contact me</a> immediately as this means one of my APIs, users, or other sites I am using in my projects bypassed my filters and I need to fix a hole.
+                    </p>
+                </li>
+                <li><h2>Open Source</h2>
+                    <p>
+                        As much as I can manage, I will always try to keep an open source representation of the source code of my projects hosted somewhere. This one may not always be true, but it will be as much as I can manage. If I fail to provide an open source repository or code listing somewhere that you would like to see, feel free to <a href="/contact">contact me</a> and I will try to provide one.
+                    </p>
+                </li>
+                <li><h2>Truthfulness</h2>
+                    <p>
+                        I will strive to keep any information or implied information put in any of my projects truthful to the best of my knowledge.
+                    </p>
+                </li>
+                <li><h2>Trustworthiness</h2>
+                    <p>
+                        I personally guarantee to do my very best to do nothing that may damage or negatively affect you, your project, server, device, or anything else I or one of my projects may affect. If a glitch or exploit causes this to occur, I will do my best to fix or repair it.
+                    </p>
+                </li>
+                <li><h2>Legality</h2>
+                    <p>
+                        If I or one of my projects ever causes a law to be violated, please <a href="contact me">contact me</a> immediately as the most likely scenario is that I am simply unaware of the law.
+                    </p>
+                </li>
+            </ul>
+            <h3>If violate anything listed above, please <a href="/contact">contact me</a> so I can review the incident.</h3>
+        </div>
+        <%- footer %>
+    </body>
+</html>

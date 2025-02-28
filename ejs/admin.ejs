@@ -34,10 +34,16 @@
         </style>
     </head>
     <body>
+        <% if(curDomain.includes("kestron.software")){ %>
+            <div id="moving">
+                This website is moving! Find us at <a href="<%= curDomain.replaceAll("kestron.software","kestron.com") %>">kestron.com</a>!
+            </div>
+        <% } %>
+        <%- header %>
         <div id="about">
             <input onclick="roll()" type="button" value="Access Admin Tools" class="bannerBtn centered"><input onclick="roll()" type="button" value="Take Stewbot Offline" class="bannerBtn centered"><input onclick="roll()" type="button" value="Take all websites offline" class="bannerBtn centered"><input onclick="roll()" type="button" value="Kestron is Deceased protocol" class="bannerBtn centered">
         </div>
-        <script src="headAndFoot.js"></script>
+        <%- footer %>
         <script>
             function roll(){
                 document.body.innerHTML=`<video width="100%" autoplay><source src="https://stewbot.kestron.software/roll.mp4" type="video/mp4"></video>${document.body.innerHTML}`;

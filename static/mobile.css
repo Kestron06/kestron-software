@@ -87,3 +87,12 @@ img{
     border-color:#00D700 #c0b07d #5e4506 #c0b07d;
     margin-bottom:1rem;
 }
+#moving{
+    width:100%;
+    margin:0.5rem;
+    background-color:rgb(255,255,0);
+    color:#000;
+    text-align:center;
+    height:5rem;
+    font-size:2rem;
+}

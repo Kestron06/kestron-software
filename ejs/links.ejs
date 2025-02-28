@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links - Kestron</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Links - Kestron" property="og:title" />
+        <meta content="View a list of links relevant to the Software Developer known as Kestron" property="og:description" />
+        <meta content="https://kestron.software" property="og:url" />
+        <meta content="https://kestron.software/images/kestron.png" property="og:image" />
+        <meta content="#006400" data-react-helmet="true" name="theme-color" />
+        <link href="all.css" media="only screen and (min-width: 480px)" rel="stylesheet"></link>
+        <link rel="stylesheet" href="links.css"></link>
+        <link rel="stylesheet" media="only screen and (max-width: 480px)" href="mobile.css"></link>
+    </head>
+    <body>
+        <% if(curDomain.includes("kestron.software")){ %>
+            <div id="moving">
+                This website is moving! Find us at <a href="<%= curDomain.replaceAll("kestron.software","kestron.com") %>">kestron.com</a>!
+            </div>
+        <% } %>
+        <%- header %>
+        <h1>Links</h1>
+        <div class="article-right ad">
+            <img src="images/linkedin.ico">
+            <h2>LinkedIn</h2>
+            <h3><a href="https://www.linkedin.com/in/kestron/" target="_blank">Jacob Higbe (Kestron)</a></h3>
+        </div>
+        <div class="ad article-left">
+            <img src="images/discord.webp">
+            <h2>Discord</h2>
+            <h3><a href="https://discord.com/users/949401296404905995" target="_blank">Kestron06</a></h3>
+            <h3><a href="https://discord.gg/k3yVkrrvez" target="_blank">Kestron Central | Support Server</a></h3>
+        </div>
+        <div class="article-right ad">
+            <img src="images/email.webp">
+            <h2>Email</h2>
+            <h3><a href="mailto:kestron@kestron.software" target="_blank">kestron@kestron.software</a></h3>
+        </div>
+        <div class="ad article-left">
+            <img src="images/github.ico" style="background-color:white;margin:0.5%;">
+            <h2>Github</h2>
+            <h3><a href="https://github.com/kestron06" target="_blank">Kestron06</a></h3>
+            <h3><a href="https://github.com/KestronProgramming" target="_blank">KestronProgramming (Organization)</a></h3>
+        </div>
+        <div class="article-right ad">
+            <img src="https://stewbot.kestron.software/stewbot.jpg">
+            <h2>Stewbot</h2>
+            <h3><a href="https://stewbot.kestron.software" target="_blank">Discord Bot</a></h3>
+        </div>
+        <div class="ad article-left">
+            <img src="https://sleuth.kestron.software/favicon.ico">
+            <h2>Sleuth</h2>
+            <h3><a href="https://sleuth.kestron.software/" target="_blank">Search Engine</a></h3>
+        </div>
+        <div class="article-right ad">
+            <img src="images/kestronMii.webp">
+            <h2>MiiJS</h2>
+            <h3><a href="https://github.com/KestronProgramming/MiiJS" target="_blank">Github Repository</a></h3>
+        </div>
+        <div class="ad article-left">
+            <img src="images/twitter.ico">
+            <h2>X (Twitter)</h2>
+            <h3><a href="https://x.com/Kestron06" target="_blank">Kestron06</a></h3>
+        </div>
+        <div class="article-right ad">
+            <img src="images/facebook.png">
+            <h2>Facebook</h2>
+            <h3><a href="https://www.facebook.com/profile.php?id=61550933732533" target="_blank">Jacob Higbe (Kestron)</a></h3>
+        </div>
+        <div class="ad article-left">
+            <img src="images/instagram.png">
+            <h2>Instagram</h2>
+            <h3><a href="https://www.instagram.com/kestron06/" target="_blank">Kestron06</a></h3>
+        </div>
+        <div class="article-right ad">
+            <img src="images/snapchat.ico">
+            <h2>Snapchat</h2>
+            <h3><a href="https://snapchat.com/t/DHb1gTMn" target="_blank">Kestron06</a></h3>
+        </div>
+        <%- footer %>
+    </body>
+</html>
